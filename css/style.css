@@ -35,11 +35,9 @@
     font-family: "EB Garamond Italic";
     src: url("../fonts/EBGaramond-Italic-VariableFont_wght.ttf");
     font-weight: 100 900;
-
-/*Komponenten*/
-.logo {
-
 }
+/*Komponenten*/
+
 
 header {
     border-bottom: 2px solid var(--text);
@@ -47,6 +45,12 @@ header {
 }
 
 /*Navigationselemente*/
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -54,7 +58,7 @@ header {
     justify-content: space-between;
 
     .logo {
-        font-family: "EB Garamond", sans-serif;
+        font-family: "EB Garamond", serif;
         font-weight: 700;
         font-size: 28px;
         text-decoration: none;
@@ -66,7 +70,7 @@ header {
         list-style: none;
         font-family: "Outfit", sans-serif;
         font-weight: 500;
-        font-size: 18pt;
+        font-size: 18px;
 
         display: flex;
         flex-direction: row;
@@ -83,12 +87,77 @@ header {
     }
 }
 
-nav
-uebertitel
-h1
-h2
-h3
-quote
-button
-bild
-card
+.uebertitel{
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 14pt;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+h1 {
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+    font-size: 64pt;
+    line-height: 0.9;
+    color: var(--text);
+}
+
+h2 {
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+    font-size: 40pt;
+    color: var(--text);
+}
+
+h3 {
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+    font-size: 24pt;
+    color: var(--text);
+}
+
+.quote-txt {
+    font-family: "EB Garamond Italic", serif;
+    font-size: 40pt;
+    color: var(--surface);
+}
+/*Fliesstext*/
+p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+    color: var(--text);
+}
+
+button {
+    display: inline-block;
+    margin: 5px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--text);
+    background: var(--surface);
+    border: 2px solid var(--text);
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 0 var(--shadow);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--shadow);
+}
+/*wenn button gedrückt wird*/
+button:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 var(--shadow);
+}
+/*Normales CSS für HOME*/
+img {
+    border-radius: 25px;
+    box-shadow: 8px 8px 0 var(--shadow);
+}
