@@ -1,0 +1,58 @@
+/* Lightmode (Standard) */
+:root {
+    --primary: #EA3535;
+    --background: #F5F5F5;
+    --surface: #FFFFFF;
+    --text: #1D1D1D;
+    --shadow: #1D1D1D;
+    --card: #FFFFFF;
+    --text-card: #1D1D1D;
+}
+
+/* Darkmode Farben */
+.dark {
+    --primary: #FF5252;
+    --background: #121212;
+    --surface: #1D1D1D;
+    --text: #F5F5F5;
+    --shadow: #FF5252;
+    --card: #F5F5F5;
+    --text-card: #1D1D1D;
+}
+
+/*Schriftarten Hinzufügen*/
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/Outfit-VariableFont_wght.ttf");
+    font-weight: 100 900;
+}
+@font-face {
+    font-family: "EB Garamond";
+    src: url("../fonts/EBGaramond-VariableFont_wght.ttf");
+    font-weight: 100 900;
+}
+@font-face {
+    font-family: "EB Garamond Italic";
+    src: url("../fonts/EBGaramond-Italic-VariableFont_wght.ttf");
+    font-weight: 100 900;
+}
+
+/*Komponenten*/
+.logo {
+
+}
+.nav {
+    ul {
+        list-style: none;
+    }
+}
+
+nav
+uebertitel
+h1
+h2
+h3
+quote
+button
+bild
+card
