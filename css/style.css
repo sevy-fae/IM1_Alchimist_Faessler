@@ -49,6 +49,10 @@ html {
 header {
     border-bottom: 2px solid var(--text);
     padding: 0 100px 0 100px;
+    position: sticky;
+    top: 0;
+    background: var(--background);
+    z-index: 10;
 }
 
 /*Navigationselemente*/
@@ -132,11 +136,6 @@ h3 {
     margin: 0;
 }
 
-.quote-txt {
-    font-family: "EB Garamond Italic", serif;
-    font-size: 40pt;
-    color: var(--surface);
-}
 /*Fliesstext*/
 p {
     font-family: "Outfit", sans-serif;
@@ -183,7 +182,7 @@ p {
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
-     padding: 100px;
+     padding:  50px 100px 50px 100px;
      gap: 250px;
 
      img {
@@ -205,4 +204,12 @@ p {
  }
  .quote-div {
      scroll-margin-top: 32px;
+     background-color: var(--text);
+     padding: 100px 50px 100px 50px;
  }
+.quote-txt {
+    font-family: "EB Garamond Italic", serif;
+    font-size: 35pt;
+    color: var(--surface);
+    text-align: center;
+}
