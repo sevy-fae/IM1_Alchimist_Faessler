@@ -35,15 +35,51 @@
     font-family: "EB Garamond Italic";
     src: url("../fonts/EBGaramond-Italic-VariableFont_wght.ttf");
     font-weight: 100 900;
-}
 
 /*Komponenten*/
 .logo {
 
 }
+
+header {
+    border-bottom: 2px solid var(--text);
+    padding: 0 100px 0 100px;
+}
+
+/*Navigationselemente*/
 .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        font-family: "EB Garamond", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        text-decoration: none;
+        color: var(--text);
+
+    }
+
     ul {
         list-style: none;
+        font-family: "Outfit", sans-serif;
+        font-weight: 500;
+        font-size: 18pt;
+
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        a{
+            color: var(--text);
+            text-decoration: none;
+
+        }
+        a.active {
+            text-decoration: underline!important;
+        }
     }
 }
 
