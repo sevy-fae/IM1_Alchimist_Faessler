@@ -43,12 +43,12 @@ html {
     src: url("../fonts/EBGaramond-Italic-VariableFont_wght.ttf");
     font-weight: 100 900;
 }
-/*Komponenten*/
 
+/*Komponenten*/
 
 header {
     border-bottom: 2px solid var(--text);
-    padding: 0 100px 0 100px;
+    padding: 20px 100px 20px 100px;
     position: sticky;
     top: 0;
     background: var(--background);
@@ -88,6 +88,7 @@ footer {
 .menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 40px;
 }
 
@@ -263,3 +264,29 @@ p {
     border: 1px solid var(--text);
     border-radius: 8px;
 }
+
+/* Theme Button Light Dark mode*/
+
+/*Theme Button*/
+.theme-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 0 var(--shadow);
+}
+
+.theme-button svg {
+    width: 16px;
+    height: 16px;
+}
+
+.theme-button:hover { box-shadow: 4px 4px 0 var(--shadow); }
+
+/* Lightmode: Mond zeigen */
+.icon-sun { display: none; }
+
+/* Darkmode: Sonne zeigen */
+.dark .icon-sun  { display: block; }
+.dark .icon-moon { display: none; }
