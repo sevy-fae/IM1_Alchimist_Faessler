@@ -282,7 +282,15 @@ p {
     height: 16px;
 }
 
-.theme-button:hover { box-shadow: 4px 4px 0 var(--shadow); }
+.theme-button:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 var(--shadow);
+}
+
+.theme-button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 0 var(--shadow);
+}
 
 /* Lightmode: Mond zeigen */
 .icon-sun { display: none; }
